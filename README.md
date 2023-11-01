@@ -1,14 +1,14 @@
 # Ardubasto: GSM/GPRS контроллер для предпусковых подогревателей с управлением по SMS и MQTT
 
-**Автор проекта – MaksVV с форума arduino.ru**
+[English version](#ardubasto-gsmgprs-controller-for-parking-heaters-with-sms-control-and-mqtt-support)
 
-[Оригинальная тема](https://arduino.ru/forum/proekty/gsm-ustroistvo-upravleniya-kotlami-webasto-i-ne-tolko) на форуме arduino.ru (в архиве)
+**Автор проекта – [MaksVV](https://forum.arduino.ru/u/maksvv/) с форума arduino.ru**
 
-[Оригинальная тема](https://forum.arduino.ru/t/gsm-ustrojstvo-upravleniya-kotlami-webasto-i-ne-tolko/9851) на форуме forum.arduino.ru
+[Оригинальная тема](https://forum.arduino.ru/t/gsm-ustrojstvo-upravleniya-kotlami-webasto-i-ne-tolko/9851) на форуме forum.arduino.ru [(Архивная тема)](https://arduino.ru/forum/proekty/gsm-ustroistvo-upravleniya-kotlami-webasto-i-ne-tolko)
 
 ## Внимание! Репозиторий находится в разработке!
 
-[Wiki](https://github.com/DimChik2903/ardubasto/wiki) (In Russian)
+**[Основной Wiki](https://github.com/DimChik2903/ardubasto/wiki)**
 
 ## Об устройстве
 ### Совместимость
@@ -31,13 +31,15 @@
 
 1) Заказать компоненты
 2) Спаять плату
-3) Прошить [eeprom](https://github.com/DimChik2903/ardubasto/tree/main/software/firmware)
-4) Прошить [актуальную прошивку](https://github.com/DimChik2903/ardubasto/tree/main/software/firmware)
+3) Прошить [eeprom](https://github.com/DimChik2903/ardubasto/tree/main/software/firmware) (eeprom)
+4) Прошить [актуальную прошивку](https://github.com/DimChik2903/ardubasto/tree/main/software/firmware) (main_firmware)
 
 # Ardubasto: GSM/GPRS controller for parking heaters with SMS control and MQTT support
 
 **Project Author – MaksVV from arduino.ru forum**
 
 ## Attention! We are currently working on the repository!
+
+[Wiki](https://github.com/DimChik2903/ardubasto/wiki) (In Russian)
 
 ## Fast start
