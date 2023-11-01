@@ -20,6 +20,9 @@
           - entity: sensor.ardubasto_modem_errors
           - entity: button.ardubasto_modem_clear_errors
           - entity: select.ardubasto_time_select
+          - entity: select.ardubasto_output
+          - entity: select.ardubasto_exhaust_temperature
+          - entity: select.ardubasto_engine_temperature
         state_color: true
         show_header_toggle: false
       - type: history-graph
