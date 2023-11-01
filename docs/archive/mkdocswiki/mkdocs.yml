@@ -1,0 +1,61 @@
+site_name: Устройство для управления Webasto по GSM
+theme:
+  name: material
+  language: ru
+  palette:
+    scheme: default
+    primary: black
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+#    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+plugins:
+  - search:
+      lang: 
+        - en
+        - ru
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/DimChik2903
+nav:
+    - Об устройстве: index.md
+    - Сборка:
+        - Заказ деталей:
+            - Корпус: hardware/box.md
+            - Печатная плата: hardware/pcb.md
+            - Компоненты: hardware/components.md
+        - Сборка устройства:
+            - Пайка: hardware/soldering.md
+            - Корпус: hardware/boxassembly.md
+    - Первый запуск:
+        - 1) Подготовка прошивки: start/fwprepare.md
+        - 2) Прошивка: start/flashing.md
+        - 3) Тесты: start/testing.md
+    - Инструкция:
+        - Работа по СМС: manual/sms.md
+        - Работа по MQTT: manual/mqtt.md
+#    - User Guide:
+#        - Overview: user-guide/index.md
+#        - Installation: user-guide/installation.md
+#        - Writing Your Docs: user-guide/writing-your-docs.md
+#        - Choosing Your Theme: user-guide/choosing-your-theme.md
+#        - Customizing Your Theme: user-guide/customizing-your-theme.md
+#        - Localizing Your Theme: user-guide/localizing-your-theme.md
+#        - Configuration: user-guide/configuration.md
+#        - Deploying Your Docs: user-guide/deploying-your-docs.md
+#    - Developer Guide:
+#        - Overview: dev-guide/index.md
+#        - Themes: dev-guide/themes.md
+#        - Translations: dev-guide/translations.md
+#        - Plugins: dev-guide/plugins.md
+#    - About:
+#        - Release Notes: about/release-notes.md
+#        - Contributing: about/contributing.md
+#        - License: about/license.md
