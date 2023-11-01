@@ -4,7 +4,7 @@
 
 **Автор проекта – [MaksVV](https://forum.arduino.ru/u/maksvv/) с форума arduino.ru**
 
-[Оригинальная тема](https://forum.arduino.ru/t/gsm-ustrojstvo-upravleniya-kotlami-webasto-i-ne-tolko/9851) на форуме forum.arduino.ru [(Архивная тема)](https://arduino.ru/forum/proekty/gsm-ustroistvo-upravleniya-kotlami-webasto-i-ne-tolko)
+[Оригинальная тема](https://forum.arduino.ru/t/gsm-ustrojstvo-upravleniya-kotlami-webasto-i-ne-tolko/9851) на форуме forum.arduino.ru При необходимости: [старая тема](https://arduino.ru/forum/proekty/gsm-ustroistvo-upravleniya-kotlami-webasto-i-ne-tolko)
 
 ## Внимание! Репозиторий находится в разработке!
 
