@@ -1,6 +1,5 @@
 mqtt:
   sensor:
-#ardubasto
     - name: "Ardubasto Signal Strength"
       state_topic: "s/lev"
       unit_of_measurement: "dB"
@@ -10,10 +9,10 @@ mqtt:
       unit_of_measurement: "V"
       icon: mdi:current-dc
       device_class: voltage
-#    - name: "Ardubasto Output"
-#      state_topic: "s/pow"
-#      unit_of_measurement: "%"
-#      icon: mdi:speedometer
+    - name: "Ardubasto Output"
+      state_topic: "s/pow"
+      unit_of_measurement: "%"
+      icon: mdi:speedometer
     - name: "Ardubasto Webasto Errors"
       state_topic: "s/dtc"
       icon: mdi:alert-circle-outline
@@ -25,10 +24,10 @@ mqtt:
       unit_of_measurement: "m"
       icon: mdi:timer-outline
 
-#    - name: "Ardubasto Exhaust Temperature"
-#      state_topic: "s/t/v"
-#      unit_of_measurement: "°C"
-#      device_class: temperature
+    - name: "Ardubasto Exhaust Temperature"
+      state_topic: "s/t/v"
+      unit_of_measurement: "°C"
+      device_class: temperature
     - name: "Ardubasto Webasto Temperature"
       state_topic: "s/t/h"
       unit_of_measurement: "°C"
@@ -41,13 +40,12 @@ mqtt:
       state_topic: "s/t/s"
       unit_of_measurement: "°C"
       device_class: temperature
-#    - name: "Ardubasto Engine Temperature"
-#      state_topic: "s/t/d"
-#      unit_of_measurement: "°C"
-#      device_class: temperature
+    - name: "Ardubasto Engine Temperature"
+      state_topic: "s/t/d"
+      unit_of_measurement: "°C"
+      device_class: temperature
 
   switch:
-#ardubasto
     - unique_id: ardubasto_power
       icon: mdi:power
       name: "Ardubasto Power"
@@ -57,7 +55,6 @@ mqtt:
       payload_off: "0&$"
 
   button:
-#ardubasto
     - name: "Ardubasto Update"
       command_topic: "c/ref"
       payload_press: "0&$"
@@ -72,7 +69,6 @@ mqtt:
       icon: mdi:autorenew
 
   binary_sensor:
-#ardubasto
     - name: "Ardubasto Flame"
       state_topic: "s/fla"
       device_class: running
@@ -80,7 +76,6 @@ mqtt:
       payload_off: "0&$"
 
   select:
-#ardubasto
       - command_topic: "c/tim"
         state_topic: "s/tim"
         name: "Ardubasto Time Select"
