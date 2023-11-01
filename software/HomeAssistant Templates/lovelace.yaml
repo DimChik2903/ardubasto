@@ -1,0 +1,32 @@
+  - theme: Backend-selected
+    title: Ardubasto
+    path: ardubasto
+    icon: mdi:car
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: switch.ardubasto_power
+          - entity: binary_sensor.ardubasto_flame
+          - entity: sensor.ardubasto_time_left
+          - entity: sensor.ardubasto_signal_strength
+          - entity: button.ardubasto_update
+          - entity: sensor.ardubasto_webasto_temperature
+          - entity: sensor.ardubasto_interior_temperature
+          - entity: sensor.ardubasto_street_temperature
+          - entity: sensor.ardubasto_voltage
+          - entity: sensor.ardubasto_webasto_errors
+          - entity: button.ardubasto_webasto_clear_errors
+          - entity: sensor.ardubasto_modem_errors
+          - entity: button.ardubasto_modem_clear_errors
+          - entity: select.ardubasto_time_select
+        state_color: true
+        show_header_toggle: false
+      - type: history-graph
+        entities:
+          - entity: sensor.ardubasto_signal_strength
+      - type: history-graph
+        entities:
+          - entity: switch.ardubasto_power
+          - entity: binary_sensor.ardubasto_flame
+        hours_to_show: 2

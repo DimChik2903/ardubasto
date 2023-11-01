@@ -1,0 +1,117 @@
+mqtt:
+  sensor:
+#ardubasto
+    - name: "Ardubasto Signal Strength"
+      state_topic: "s/lev"
+      unit_of_measurement: "dB"
+      icon: mdi:signal
+    - name: "Ardubasto Voltage"
+      state_topic: "u"
+      unit_of_measurement: "V"
+      icon: mdi:current-dc
+      device_class: voltage
+#    - name: "Ardubasto Output"
+#      state_topic: "s/pow"
+#      unit_of_measurement: "%"
+#      icon: mdi:speedometer
+    - name: "Ardubasto Webasto Errors"
+      state_topic: "s/dtc"
+      icon: mdi:alert-circle-outline
+    - name: "Ardubasto Modem Errors"
+      state_topic: "s/res"
+      icon: mdi:alert-circle-outline
+    - name: "Ardubasto Time Left"
+      state_topic: "s/rti"
+      unit_of_measurement: "m"
+      icon: mdi:timer-outline
+
+#    - name: "Ardubasto Exhaust Temperature"
+#      state_topic: "s/t/v"
+#      unit_of_measurement: "°C"
+#      device_class: temperature
+    - name: "Ardubasto Webasto Temperature"
+      state_topic: "s/t/h"
+      unit_of_measurement: "°C"
+      device_class: temperature
+    - name: "Ardubasto Street Temperature"
+      state_topic: "s/t/u"
+      unit_of_measurement: "°C"
+      device_class: temperature
+    - name: "Ardubasto Interior Temperature"
+      state_topic: "s/t/s"
+      unit_of_measurement: "°C"
+      device_class: temperature
+#    - name: "Ardubasto Engine Temperature"
+#      state_topic: "s/t/d"
+#      unit_of_measurement: "°C"
+#      device_class: temperature
+
+  switch:
+#ardubasto
+    - unique_id: ardubasto_power
+      icon: mdi:power
+      name: "Ardubasto Power"
+      state_topic: "s/hea"
+      command_topic: "c/hea"
+      payload_on: "1&$"
+      payload_off: "0&$"
+
+  button:
+#ardubasto
+    - name: "Ardubasto Update"
+      command_topic: "c/ref"
+      payload_press: "0&$"
+      icon: mdi:update
+    - name: "Ardubasto Webasto Clear Errors"
+      command_topic: "c/ecl"
+      payload_press: "1&$"
+      icon: mdi:autorenew
+    - name: "Ardubasto Modem Clear Errors"
+      command_topic: "c/res"
+      payload_press: "0&$"
+      icon: mdi:autorenew
+
+  binary_sensor:
+#ardubasto
+    - name: "Ardubasto Flame"
+      state_topic: "s/fla"
+      device_class: running
+      payload_on: "1&$"
+      payload_off: "0&$"
+
+  select:
+#ardubasto
+      - command_topic: "c/tim"
+        state_topic: "s/tim"
+        name: "Ardubasto Time Select"
+        icon: mdi:timer-settings-outline
+        options:
+          - "15 min"
+          - "20 min"
+          - "30 min"
+          - "45 min"
+          - "1 h"
+        command_template: >-
+         {% if value == '15 min' %}
+           15&%
+         {% elif value == '20 min' %}
+           20&%
+         {% elif value == '30 min' %}
+           30&%
+         {% elif value == '45 min' %}
+           45&%
+         {% elif value == '1 h' %}
+           59&%
+         {% endif %}
+        value_template: >-
+         {% if value == '15' %}
+           15 min
+         {% elif value == '20' %}
+           20 min
+         {% elif value == '30' %}
+           30 min
+         {% elif value == '45' %}
+           45 min
+         {% elif value == '59' %}
+           1 h
+         {% endif %}
