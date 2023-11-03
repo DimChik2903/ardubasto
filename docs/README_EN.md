@@ -1,5 +1,7 @@
 # Ardubasto: GSM/GPRS контроллер для предпусковых подогревателей с управлением по SMS и MQTT
 
+[English version](#ardubasto-gsmgprs-controller-for-parking-heaters-with-sms-control-and-mqtt-support)
+
 **Автор проекта – [MaksVV](https://forum.arduino.ru/u/maksvv/) с форума arduino.ru**
 
 [Чат в Telegram](https://t.me/ardubasto)
@@ -8,7 +10,7 @@
 
 ## Внимание! Репозиторий находится в разработке!
 
-## [Основной Wiki](https://github.com/DimChik2903/ardubasto/wiki)
+**[Основной Wiki](https://github.com/DimChik2903/ardubasto/wiki)**
 
 ## Об устройстве
 ### Совместимость
@@ -29,10 +31,17 @@
 
 ## Быстрый старт
 
- [1. Закажи компоненты](https://github.com/DimChik2903/ardubasto/wiki/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2)
+1) Заказать компоненты
+2) Спаять плату
+3) Прошить [eeprom](https://github.com/DimChik2903/ardubasto/tree/main/software/firmware) (eeprom)
+4) Прошить [актуальную прошивку](https://github.com/DimChik2903/ardubasto/tree/main/software/firmware) (main_firmware)
 
- [2. Собери устройство](https://github.com/DimChik2903/ardubasto/wiki/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0)
+# Ardubasto: GSM/GPRS controller for parking heaters with SMS control and MQTT support
 
- [3. Прошей](https://github.com/DimChik2903/ardubasto/wiki/%D0%9F%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0)
+**Project Author – MaksVV from arduino.ru forum**
 
- [4. Подключи](https://github.com/DimChik2903/ardubasto/wiki/%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)
+## Attention! We are currently working on the repository!
+
+[Wiki](https://github.com/DimChik2903/ardubasto/wiki) (In Russian)
+
+## Fast start
