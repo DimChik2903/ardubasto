@@ -10,6 +10,8 @@
 
 ## [Основной Wiki](https://github.com/DimChik2903/ardubasto/wiki)
 
+![](./docs/images/Maks's_finished.jpg)
+
 ## Об устройстве
 ### Совместимость
 
