@@ -15,8 +15,7 @@
 
 * Запуск по потенциалу +12В (Webasto Thermo Top C/E)
 * Запуск импульсом GND 1 сек (Webasto Thermo Top C/E)
-* Запуск по шине W-Bus (Webasto Thermo Top C/E)
-* Запуск по шине W-Bus (Webasto Thermo Top Evo)
+* Запуск по шине W-Bus (Webasto Thermo Top C/E, Thermo Top Evo)
 * Запуск по шине Бинар (?)
 
 ### Основные функции
