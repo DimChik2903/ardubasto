@@ -13,8 +13,8 @@ void readModem() //_____Цикл чтения входящих СМС-сообщ
   static uint32_t timerMQTTreconnect = 0;
   
 
-// если было неудачное подключение к MQTT, ждём час и снова пробуем
-if (mqtt && TimerMQTTreconnect && currmillis - timerMQTTreconnect > 3600000UL) 
+// если было неудачное подключение к MQTT, ждём 20 мин и снова пробуем
+if (mqtt && TimerMQTTreconnect && currmillis - timerMQTTreconnect > 1200000UL) 
     {
       TimerMQTTreconnect = 0; 
       MQTTrestart();
