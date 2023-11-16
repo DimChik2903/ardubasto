@@ -19,7 +19,6 @@
 * Запуск импульсом GND 1 сек (Webasto Thermo Top C/E)
 * Запуск по шине W-Bus (Webasto Thermo Top C/E, Thermo Top Evo)
 * Запуск по шине Eberspacher Hydronic
-* Запуск по шине Бинар (?)
 
 ### Основные функции
 
